@@ -51,9 +51,9 @@ NS_ASSUME_NONNULL_BEGIN
     @param defaultValue The provider default initialization value (e.g. email or phone number)
         used for signing in.
  */
-- (void)signInWithProviderUI:(id<FUIAuthProvider>)providerUI
-    presentingViewController:(UIViewController *)presentingViewController
-                defaultValue:(nullable NSString *)defaultValue;
+//- (void)signInWithProviderUI:(id<FUIAuthProvider>)providerUI
+//    presentingViewController:(UIViewController *)presentingViewController
+//                defaultValue:(nullable NSString *)defaultValue;
 
 @end
 

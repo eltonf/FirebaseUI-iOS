@@ -253,6 +253,14 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
  */
 - (BOOL)signOutWithError:(NSError *_Nullable *_Nullable)error;
 
+/** @fn signInWithProviderUI:presentingViewController:defaultValue:
+ @brief Signs in with specified provider.
+ @see FUIAuthDelegate.authUI:didSignInWithAuthDataResult:error: for method callback.
+ @param providerUI The authentication provider used for signing in.
+ @param presentingViewController The view controller used to present the UI.
+ @param defaultValue The provider default initialization value (e.g. email or phone number)
+ used for signing in.
+ */
 - (void)signInWithProviderUI:(id<FUIAuthProvider>)providerUI
     presentingViewController:(FUIAuthBaseViewController *)presentingViewController
                 defaultValue:(nullable NSString *)defaultValue;
