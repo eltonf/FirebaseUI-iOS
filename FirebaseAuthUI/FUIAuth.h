@@ -27,6 +27,7 @@
 @class FUIPasswordSignUpViewController;
 @class FUIPasswordRecoveryViewController;
 @class FUIPasswordVerificationViewController;
+@class FUIAuthBaseViewController;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -251,6 +252,10 @@ __attribute__((deprecated("Instead use authUI:didSignInWithAuthDataResult:error:
         will contain more information about the error encountered.
  */
 - (BOOL)signOutWithError:(NSError *_Nullable *_Nullable)error;
+
+- (void)signInWithProviderUI:(id<FUIAuthProvider>)providerUI
+    presentingViewController:(FUIAuthBaseViewController *)presentingViewController
+                defaultValue:(nullable NSString *)defaultValue;
 
 @end
 
